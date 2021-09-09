@@ -10,7 +10,23 @@
     background-position: center;
     background-size: cover;
     position: relative;
+    animation: slider 16s ease-in-out infinite;
 }
+@keyframes slider {
+    0%,100%{
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.9)), url(./images/photo.jpg);
+    }
+    25%{
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.9)), url(./images/photo2.jpg);
+    }
+    50%{
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.9)), url(./images/photo3.jpg);
+    }
+    75%{
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.9)), url(./images/photo2.jpg);
+    }
+}
+
 nav{
     display: flex;
     padding: 2% 6%;
